@@ -3,6 +3,7 @@ package com.kuang.dao;
 import com.kuang.pojo.User;
 
 import java.util.List;
+import java.util.Map;
 
 public interface UserMapper {
     //获取全部用户
@@ -11,13 +12,8 @@ public interface UserMapper {
     //根据ID查询用户
     User getUserById(int id);
 
-    //插入一个用户
-    int addUser(User user);
+    //分页
+    List<User> getUserByLimit(Map<String,Integer> map);
 
-    //修改用户
-    int updateUser(User user);
-
-    //删除一个用户
-    int deleteUser(int id);
-
+    List<User> getUserByRowBounds();
 }
