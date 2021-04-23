@@ -38,7 +38,6 @@ public class UserDaoTest {
     public void testLog4j() {
         logger.info("info:进入了testLog4j");
         logger.debug("debug:进入了testLog4j");
-        logger.error("error:进入了testLog4j");
 
     }
 
