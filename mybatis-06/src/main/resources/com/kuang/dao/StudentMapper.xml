@@ -9,7 +9,7 @@
         from student s, teacher t
         where s.tid=t.id;
     </select>
-    
+
     <resultMap id="StudentTeacher2" type="Student">
         <result property="id" column="sid"/>
         <result property="name" column="sname"/>
